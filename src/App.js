@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from './utils/Themes';
+import { darkTheme } from './utils/Themes';
 import Navbar from "./components/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/sections/Hero";
@@ -37,10 +37,9 @@ const Wrapper = styled.div`
 `;
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
         <Navbar />
         <Body>
