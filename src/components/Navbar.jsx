@@ -154,6 +154,7 @@ const Navbar = () => {
           <NavLink href='#Experience'>Experience</NavLink>
           <NavLink href='#Projects'>Projects</NavLink>
           <NavLink href='#Education'>Education</NavLink>
+          <NavLink href='#Contact'>Contact</NavLink>
         </NavItems>
         
         {isOpen && (
@@ -172,6 +173,9 @@ const Navbar = () => {
             </NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} href='#Education'>
               Education
+            </NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} href='#Contact'>
+              Contact
             </NavLink>
             <GitHubButton 
               href={Bio.github} 
