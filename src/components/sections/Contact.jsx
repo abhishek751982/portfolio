@@ -49,7 +49,7 @@ const Desc = styled.div`
   }
 `;
 
-const ContactForm = styled.div`
+const ContactForm = styled.form`
   width: 95%;
   max-width: 600px;
   display: flex;
@@ -118,19 +118,17 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted");
     emailjs.sendForm(
-      process.env.EMAILJS_SERVICE_ID, 
-      process.env.EMAILJS_TEMPLATE_ID, 
+      process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
       form.current,
-      process.env.EMAILJS_PUBLIC_KEY
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     ).then((result) => {
       console.log(result.text);
-      console.log("message sent");
       setOpen(true);
       form.current.reset();
     }, (error) => {
-      console.log(error.text);
+      console.log(error);
     });
   };
 
