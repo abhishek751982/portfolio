@@ -102,7 +102,7 @@ const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: hsla(271, 100%, 50%, 1);
+  background: ${({ isDisabled }) => isDisabled ? 'hsla(271, 80%, 40%, 1)' : 'hsla(271, 100%, 50%, 1)'};
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
@@ -111,19 +111,16 @@ const ContactButton = styled.input`
   font-size: 18px;
   font-weight: 600;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-  opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
-  
-  &:hover {
-    background: ${({ disabled }) => !disabled && 'hsla(271, 100%, 40%, 1)'};
-  }
 `;
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsDisabled(true);
     emailjs.sendForm(
       process.env.REACT_APP_EMAILJS_SERVICE_ID, 
       process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
@@ -132,9 +129,11 @@ const Contact = () => {
     ).then((result) => {
       console.log(result.text);
       setOpen(true);
+      setIsDisabled(false);
       form.current.reset();
     }, (error) => {
       console.log(error);
+      setIsDisabled(false);
     });
   };
 
@@ -159,7 +158,7 @@ const Contact = () => {
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" name="message" rows="4" />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton type="submit" value="Send" disabled={isDisabled} isDisabled={isDisabled} />
         </ContactForm>
         <Snackbar
           open={open}
