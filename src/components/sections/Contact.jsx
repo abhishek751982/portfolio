@@ -110,6 +110,12 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
+  
+  &:hover {
+    background: ${({ disabled }) => !disabled && 'hsla(271, 100%, 40%, 1)'};
+  }
 `;
 
 const Contact = () => {
