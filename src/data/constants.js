@@ -1,6 +1,7 @@
 import projectImage1 from "../images/projects/basicblog.png";
 import projectImage2 from "../images/projects/touropedia.png";
 import projectImage3 from "../images/projects/notesapp.png";
+import projectImage4 from "../images/projects/AbhiBook.png";
 
 export const Bio = {
   name: "Abhishek Sharma",
@@ -424,7 +425,7 @@ export const projects = [
   {
     id: 11,
     title: "BasicBlog - Blog App",
-    date: "Apr 2024 - Jun 2024",
+    date: "Feb 2024 - Apr 2024",
     description:
       "Built a full stack blog platform BasicBlog using the MERN stack, where Implemented user and admin dashboards, a theme toggle feature, and search functionality to enhance user engagement. Also integrated secure authentication with Email and Google sign-in and utilized Redux for state management to boost application performance.",
     image: projectImage1,
@@ -434,6 +435,8 @@ export const projects = [
       "ExpressJs",
       "MongoDb",
       "Firebase",
+      "JWT",
+      "Google OAuth",
       "Redux",
       "Tailwind CSS",
     ],
@@ -454,6 +457,8 @@ export const projects = [
       "MongoDb",
       "Firebase",
       "NodeJs",
+      "JWT",
+      "Google OAuth",
       "ExpressJs",
       "Redux",
       "Tailwind CSS",
@@ -463,13 +468,34 @@ export const projects = [
     webapp: "https://github.com/abhishek751982/Touropedia",
   },
   {
+    id: 8,
+    title: "AbhiBook - Booking App",
+    date: "Jum 2024 - Aug 2024",
+    description:
+      "AbhiBook is a full-stack booking application developed using the MERN stack. The app features real-time booking management, search and filtering functionalities, secure user authentication, and payment integration. Stripe is used for payments, and Cloudinary handles image uploads. Tailwind CSS is utilized for a responsive and modern UI design.",
+    image: projectImage4,
+    tags: [
+      "ReactJs",
+      "MongoDb",
+      "NodeJs",
+      "ExpressJs",
+      "JWT",
+      "Tailwind CSS",
+      "Cloudinary",
+      "Stripe",
+    ],
+    category: "web app",
+    github: "https://github.com/abhishek751982/AbhiBook",
+    webapp: "https://github.com/abhishek751982/AbhiBook",
+  },
+  {
     id: 0,
     title: "Notes-app",
     date: "May 2023 - Jun 2023",
     description:
       "Developed notes-app, a full stack web application for note creation, updating, and deletion, designing both the frontend and backend to ensure smooth user interaction.",
     image: projectImage3,
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux", "CSS"],
+    tags: ["ReactJs", "MongoDb", "NodeJs", "ExpressJs", "Redux", "CSS"],
     category: "web app",
     github: "https://github.com/abhishek751982/notes-app",
     webapp: "https://github.com/abhishek751982/notes-app",
