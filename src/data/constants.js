@@ -1,7 +1,7 @@
 import projectImage1 from "../images/projects/basicblog.png";
 import projectImage2 from "../images/projects/touropedia.png";
 import projectImage3 from "../images/projects/notesapp.png";
-import projectImage4 from "../images/projects/AbhiBook.png";
+import projectImage4 from "../images/projects/BookSlot.png";
 
 export const Bio = {
   name: "Abhishek Sharma",
@@ -469,10 +469,10 @@ export const projects = [
   },
   {
     id: 8,
-    title: "AbhiBook - Booking App",
+    title: "BookSlot - Booking App",
     date: "Jum 2024 - Aug 2024",
     description:
-      "AbhiBook is a full-stack booking application developed using the MERN stack. The app features real-time booking management, search and filtering functionalities, secure user authentication, and payment integration. Stripe is used for payments, and Cloudinary handles image uploads. Tailwind CSS is utilized for a responsive and modern UI design.",
+      "BookSlot is a full-stack booking application developed using the MERN stack. The app features real-time booking management, search and filtering functionalities, secure user authentication, and payment integration. Stripe is used for payments, and Cloudinary handles image uploads. Tailwind CSS is utilized for a responsive and modern UI design.",
     image: projectImage4,
     tags: [
       "ReactJs",
