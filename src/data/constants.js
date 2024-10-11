@@ -17,9 +17,10 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/1Bv8-5t9l-JN8-Q4B0l_qZn2RLhZ2ftsx/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/abhishek-sharma-31b04a213/",
-  twitter: "https://x.com/abhishek751982",
+  twitter: "https://x.com/",
   insta: "https://www.instagram.com/",
-  facebook: "https://www.facebook.com/abhisheksharma.sharma.986/",
+  facebook: "https://www.facebook.com/",
+  githubs: "https://github.com/abhishek751982",
 };
 
 export const skills = [

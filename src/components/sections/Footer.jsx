@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Bio } from '../../data/constants';
-import { FacebookRounded, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
+import { FacebookRounded, Instagram, LinkedIn, Twitter, GitHub } from '@mui/icons-material';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -107,6 +107,9 @@ const Footer = () => {
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display">
             <Instagram />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="display">
+            <GitHub />
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>&copy; 2024 Abhishek Sharma. All rights reserved.</Copyright>
