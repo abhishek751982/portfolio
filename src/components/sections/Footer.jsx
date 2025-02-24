@@ -83,6 +83,7 @@ const Copyright = styled.p`
 `;
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <FooterContainer>
       <FooterWrapper>
@@ -96,23 +97,23 @@ const Footer = () => {
           <NavLink href='#Contact'>Contact</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display">
+          {/* <SocialMediaIcon href={Bio.facebook} target="display">
             <FacebookRounded />
-          </SocialMediaIcon>
+          </SocialMediaIcon> */}
           <SocialMediaIcon href={Bio.twitter} target="display">
             <Twitter />
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display">
             <LinkedIn />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display">
+          {/* <SocialMediaIcon href={Bio.insta} target="display">
             <Instagram />
-          </SocialMediaIcon>
+          </SocialMediaIcon> */}
           <SocialMediaIcon href={Bio.github} target="display">
             <GitHub />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Abhishek Sharma. All rights reserved.</Copyright>
+        <Copyright>&copy; {currentYear} Abhishek Sharma. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   )
