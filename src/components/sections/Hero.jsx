@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Bio } from '../../data/constants';
 import Typewriter from 'typewriter-effect';
-import HeroImg from '../../images/HeroImage1.jpg';
+import HeroImg from '../../images/HeroImage.JPG';
 import HeroBgAnimation from '../HeroBgAnimation';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
@@ -169,8 +169,10 @@ const Img = styled.img`
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center top;
   border: 2px solid ${({ theme }) => theme.primary};
 
   @media screen and (max-width: 640px) {
