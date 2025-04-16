@@ -1,7 +1,8 @@
 import projectImage1 from "../images/projects/basicblog.png";
 import projectImage2 from "../images/projects/touropedia.png";
 import projectImage3 from "../images/projects/notesapp.png";
-import projectImage4 from "../images/projects/BookSlot.png";
+// import projectImage4 from "../images/projects/BookSlot.png";
+import projectImage5 from "../images/projects/LiveCompiler.png";
 
 export const Bio = {
   name: "Abhishek Sharma",
@@ -286,6 +287,16 @@ export const skills = [
         image:
           "https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png",
       },
+      {
+        name: "Docker",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+      },
+      {
+        name: "Socket.io",
+        image:
+          "https://socket.io/images/logo-dark.svg",
+      },
     ],
   },
 ];
@@ -471,24 +482,23 @@ export const projects = [
   },
   {
     id: 8,
-    title: "BookSlot - Booking App",
-    date: "Jum 2024 - Aug 2024",
+    title: "LiveCompiler - Remote Code Executer",
+    date: "Oct 2024 - Dec 2024",
     description:
-      "BookSlot is a full-stack booking application developed using the MERN stack. The app features real-time booking management, search and filtering functionalities, secure user authentication, and payment integration. Stripe is used for payments, and Cloudinary handles image uploads. Tailwind CSS is utilized for a responsive and modern UI design.",
-    image: projectImage4,
+      "LiveCompiler is a multi-language code execution platform enabling real-time collaboration through Socket.io, deployed on AWS for scalability. Leveraged Docker for secure process isolation, reducing system vulnerabilities by 40% and CRUD latency by 40%. Implemented advanced code sanitization techniques to minimize malicious code injections by 90% and improve execution time by 30%. Designed the system with a modular architecture to enhance code reusability by 20% and optimize overall performance. Built with React.js, Node.js, and Express for a robust full-stack solution.",
+    image: projectImage5,
     tags: [
       "ReactJs",
-      "MongoDb",
       "NodeJs",
       "ExpressJs",
-      "JWT",
+      "Socket.io",
+      "Docker",
       "Tailwind CSS",
-      "Cloudinary",
-      "Stripe",
+      "AWS",
     ],
     category: "web app",
-    github: "https://github.com/abhishek751982/AbhiBook",
-    webapp: "https://github.com/abhishek751982/AbhiBook",
+    github: "https://github.com/abhishek751982/LiveCompiler",
+    webapp: "https://remote-code-executor.vercel.app/",
   },
   {
     id: 0,
