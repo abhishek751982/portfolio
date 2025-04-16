@@ -455,7 +455,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/abhishek751982/BasicBlog",
-    webapp: "https://basicblog-production.up.railway.app/",
+    webapp: "https://basicblog-x7xi.onrender.com/",
   },
   {
     id: 9,
