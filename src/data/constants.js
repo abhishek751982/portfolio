@@ -304,11 +304,11 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://www.thecompanycheck.com/Images/default-com-logo.webp",
+    img: "https://media.licdn.com/dms/image/v2/D560BAQHQgt7TdR7AGQ/company-logo_200_200/company-logo_200_200/0/1707968843484/amunik_logo?e=2147483647&v=beta&t=wL1oqBGVYBwdh8xt1wbeLTooedbBSJ2B3kGojW4Lif4",
     role: "Backend Developer Intern",
     company: "Amunik Private Limited",
     date: "May 2024 - Jul 2024",
-    desc: "Developed and maintained RESTful APIs for an e-commerce application from scratch using Node.js, Express.js, MongoDB, and AWS S3 Bucket for image uploads, enhancing data retrieval and storage efficiency by 30% through optimized database queries. Integrated FCM to enable real-time messaging and notifications for order updates, and collaborated with frontend developers to integrate and test API endpoints, resulting in a 25% reduction in bug reports.",
+    desc: "During my internship at Amunik Pvt. Ltd. as a Backend Developer, I developed and maintained over 20+ RESTful APIs for a quick-commerce platform using Node.js, Express.js, and MongoDB. I worked on building a real-time inventory tracking and stock management system that streamlined order handling. I also integrated AWS S3 for secure image uploads and implemented Firebase Cloud Messaging (FCM) for real-time order notifications. Collaborating closely with frontend developers, I ensured seamless integration of over 20+ APIs, contributing to a smooth and responsive user experience.",
     skills: [
       "ReactJS",
       "NodeJs",
@@ -411,7 +411,7 @@ export const education = [
     school: "Indian Institute of Information Technology, Gwalior",
     date: "Oct 2020 - Jun 2025",
     // grade: "8.41 CGPA",
-    desc: "I am currently pursuing Integrated Post Graduate (B.Tech + M.Tech) degree in Information Technology at the Indian Institute of Information Technology, Gwalior. With a strong hands-on experience in the MERN Stack, I have developed a keen interest in software development and engineering. I have also work experience as a Backend Developer, where I honed my skills in building and maintaining scalable applications. I am actively seeking internship opportunities in SDE/SWE roles to further apply my knowledge, contribute to innovative projects, and grow in a challenging environment.",
+    desc: "I am a recent graduate of IIIT Gwalior, where I completed an Integrated B.Tech + M.Tech in Information Technology. With a strong hands-on experience in the MERN Stack, I have developed a keen interest in software development and engineering. I have also work experience as a Backend Developer, where I honed my skills in building and maintaining scalable applications. I am actively seeking opportunities in SDE/SWE roles to further apply my knowledge, contribute to innovative projects, and grow in a challenging environment.",
     degree: "Integrated (B.Tech+M.Tech), Information Technology",
   },
   {
